@@ -9,8 +9,11 @@
     margin: 0;
 }
 
+/* HEADER */
 .logo {
     margin-left: 41px;
+    width: 214px;
+    height: 80px;
 }
 
 .headerTextPhoto {
@@ -22,73 +25,6 @@
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
-}
-
-.nav-toggler {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.nav-toggler .bar1,
-.nav-toggler .bar2,
-.nav-toggler .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: orange;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-/* Rotate first bar */
-.nav-toggler.toggled .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-/* Fade out the second bar */
-.nav-toggler.toggled .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.nav-toggler.toggled .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-/*.circle,
-.circle1,
-.circle2,
-.circle3 {
-    position: absolute;
-    background-color: palegreen;
-    width: 100px;
-    height: 100px;
-    top: 500px;
-    left: 600px;
-    border-radius: 50%;
-  display: inline-block;
-}
-
-.circle2 {
-    margin-right: 50px;
-}*/
-
-.dotsHeader {
-    position: absolute;
-    display: flex;
-    top: 600px;
-    left: 680px;
-    font-size: 25px;
-}
-
-.dotsHeader li {
-    list-style-type: none;
-    padding-right: 10px;
-}
-
-.dotsHeader li:nth-child(4) {
-    color: orange;
 }
 
 .headerTextPhoto h1 {
@@ -170,12 +106,99 @@
     color: #C36F09;
 }
 
-.logo {
-    width: 214px;
-    height: 80px;
+nav ul li i {
+    transition: all 0.5s ease-in-out;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
 
+.dropdown-content a {
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+}
+
+.dropdown i {
+    transform: rotate(180deg);
+}
+
+.dropdown .user {
+    transform: rotate(0deg);
+}
+
+.dropdown:hover {
+    color: #C36F09;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #C36F09;
+}
+
+.dropdown:hover i {
+    transform: rotate(0deg);
+    color: #C36F09;
+}
+
+nav ul li i:hover {
+    color: #C36F09;
+}
+
+/* HAMBURGER ICON */
+.nav-toggler {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-toggler .bar1,
+.nav-toggler .bar2,
+.nav-toggler .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: orange;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-toggler.toggled .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.nav-toggler.toggled .bar2 {
+    opacity: 0;
+}
+
+.nav-toggler.toggled .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* CIRKELS IN HEADER */
+.dotsHeader {
+    position: absolute;
+    display: flex;
+    top: 600px;
+    left: 680px;
+    font-size: 25px;
+}
+
+.dotsHeader li {
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.dotsHeader li:nth-child(4) {
+    color: orange;
+}
+
+/* TWEEDE HEADER */
 .navMenu {
     border-bottom: 0.5px solid rgb(199, 199, 198);
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.17);
@@ -195,6 +218,7 @@
     color: var(--color-midgray);
 }
 
+/* MAIN - CONTAINER */
 main h3 {
     margin-left: 100px;
     margin-bottom: 5px;
@@ -313,50 +337,7 @@ aside h2 {
     color: white;
 }
 
-nav ul li i {
-    transition: all 0.5s ease-in-out;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    padding: 10px 0px 10px 0px;
-    text-decoration: none;
-    font-size: 10px;
-    display: block;
-}
-
-.dropdown i {
-    transform: rotate(180deg);
-}
-
-.dropdown .user {
-    transform: rotate(0deg);
-}
-
-.dropdown:hover {
-    color: #C36F09;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    color: #C36F09;
-}
-
-.dropdown:hover i {
-    transform: rotate(0deg);
-    color: #C36F09;
-}
-
-nav ul li i:hover {
-    color: #C36F09;
-}
-
+/* FOOTER */
 footer {
     padding: 20px 0px 80px 0px;
     background: linear-gradient(355deg, rgba(195, 111, 9, 1) 0%, rgba(190, 150, 100, 1) 100%);
