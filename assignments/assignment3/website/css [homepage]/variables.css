@@ -1,0 +1,10 @@
+:root {
+    --color-black: #191919; 
+    --color-green: #1DB954;
+    --color-white: #FFFFFF;
+    --color-darkgrey: #121212;
+    --color-lightgrey: #868687;
+    --color-midgrey: #282828;
+
+    --text-font: 'Montserrat', sans-serif;
+}
