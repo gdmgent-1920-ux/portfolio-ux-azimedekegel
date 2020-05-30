@@ -195,10 +195,6 @@
     color: var(--color-midgray);
 }
 
-.navMenu li:nth-child(2) {
-    border-bottom: 1px solid #C36F09;
-}
-
 main h3 {
     margin-left: 100px;
     margin-bottom: 5px;
@@ -313,6 +309,10 @@ aside h2 {
     left: 650px;
 }
 
+.main a {
+    color: white;
+}
+
 nav ul li i {
     transition: all 0.5s ease-in-out;
 }
@@ -363,6 +363,10 @@ footer {
     color: white;
     line-height: 30px;
     font-size: 14px;
+}
+
+footer a {
+    color: white;
 }
 
 footer .inputMail input {

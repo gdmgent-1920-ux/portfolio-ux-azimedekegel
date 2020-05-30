@@ -422,6 +422,10 @@ footer {
     font-size: 14px;
 }
 
+footer a {
+    color: white;
+}
+
 footer .inputMail input {
     position: relative;
     background: transparent;
